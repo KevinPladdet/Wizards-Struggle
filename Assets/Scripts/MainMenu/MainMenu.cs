@@ -16,4 +16,9 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void OpenURL()
+    {
+        Application.OpenURL("https://discord.gg/YVDgqWUh6x");
+    }
+
 }
