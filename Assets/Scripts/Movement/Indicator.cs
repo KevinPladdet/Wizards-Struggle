@@ -22,7 +22,19 @@ public class Indicator : MonoBehaviour
         if (Input.GetKey("right"))
         {
             transform.RotateAround(Player.position, RightAxis, Speed);
-        }  
+        }
+
+        //gameplay controls for arcade machine
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            transform.RotateAround(Player.position, LeftAxis, Speed);
+        }
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            transform.RotateAround(Player.position, RightAxis, Speed);
+        }
+        //game play controls for arcade machine ^^^^^
     }
 
 }

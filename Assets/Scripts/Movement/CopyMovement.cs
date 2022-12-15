@@ -186,6 +186,7 @@ public class CopyMovement : MonoBehaviour
             GetComponent<SpriteRenderer>().flipX = true;
             transform.position = new Vector2(transform.position.x + 0.1f, transform.position.y);
         }
+
         if (Input.GetKey(KeyCode.C))
         {
             anim.SetBool("Walking", true);
